@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-process.env.NODE_env = process.env.NODE_env || 'developemnt';
+process.env.NODE_env = process.env.NODE_env || 'development';
 
 if (process.env.NODE_env === 'test') {
     require('dotenv').config({ path: '.env.test'});
